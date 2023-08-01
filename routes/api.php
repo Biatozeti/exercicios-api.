@@ -18,3 +18,5 @@ Route::post('exercicio/um',
 [ExercicioUmController::class, 'multiplicar']);
 Route::get('exercicio/sete', 
 [ExercicioSeteController::class, 'exibirNumeros']);
+Route::post('exercicio/dois', 
+[ExercicioDoisController::class, 'retornarMaior']);

@@ -1,5 +1,13 @@
 <?php
 
+use App\Http\Controllers\Exercicio3;
+use App\Http\Controllers\ExercicioCinco;
+use App\Http\Controllers\ExercicioDois;
+use App\Http\Controllers\ExercicioOito;
+use App\Http\Controllers\ExercicioQuatro;
+use App\Http\Controllers\ExercicioSeis;
+use App\Http\Controllers\ExercicioSete;
+use App\Http\Controllers\ExercicioUm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,19 +22,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('exercicio/um', 
-[ExercicioUmController::class, 'multiplicar']);
+route::post('exercicio/um',
+[ExercicioUm::class, 'multiplicar']);
+
 Route::get('exercicio/sete', 
-[ExercicioSeteController::class, 'exibirNumeros']);
+[ExercicioSete::class, 'exibirNumeros']);
+
 Route::post('exercicio/dois', 
-[ExercicioDoisController::class, 'retornarMaior']);
+[ExercicioDois::class, 'retornarMaior']);
+
 Route::post('exercicio/quatro',
-[ExercicioQuatroController::class, 'verficar']);
+[ExercicioQuatro::class, 'verficar']);
+
 Route::post('exercicio/3', 
-[ExercicioTresController::class, 'media']);
+[Exercicio3::class, 'media']);
+
 Route::post('exercicio/cinco',
-[ExercicioCincoController::class, 'verificacao']);
+[ExercicioCinco::class, 'verificacao']);
+
 Route::post('exercicio/seis',
-[ExercicioSeisController::class, 'idade']);
+[ExercicioSeis::class, 'idade']);
+
 Route::post('exercicio/oito',
-[ExercicioOitoController::class, 'tabuada']);
+[ExercicioOito::class, 'tabuada']);
